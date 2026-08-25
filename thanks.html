@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>致謝名單</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span>
+          臺北市數位實驗高級中等學校第五屆學生會
+          <small>數位部 學生數位專案計畫</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="切換選單" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="projects.html">數位專案</a></li>
+        <li><a href="bugbounty.html">資安漏洞回報</a></li>
+        <li><a href="thanks.html" class="active">致謝名單</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">首頁</a> / 致謝名單</div>
+        <h1>致謝名單</h1>
+      </div>
+    </section>
+
+    <section class="thanks-hero">
+      <div class="container">
+        <div class="thanks-cards">
+          <div class="stat-card">
+            <div class="num">0</div>
+            <div class="label">提報總數</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">0</div>
+            <div class="label">已通過之數位專案</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">0</div>
+            <div class="label">有效漏洞通報</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="panel" id="projects">
+          <h3><span class="num">A</span>數位專案致謝名單</h3>
+          <p class="mb-2">感謝下列團隊開發並完成數位專案，為校園帶來實用、有趣的數位服務。</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>專案名稱</th>
+                  <th>團隊成員</th>
+                  <th>成果說明</th>
+                  <th>狀態</th>
+                </tr>
+              </thead>
+              <!-- <tbody>
+                <tr>
+                  <td>ＯＯＯ</td>
+                  <td>ＯＯＯ</td>
+                  <td>ＯＯＯＯＯＯ</td>
+                  <td><span class="tag tag-cyan">整併中</span></td>
+                </tr>
+                <tr>
+                  <td>ＯＯＯ</td>
+                  <td>ＯＯＯ</td>
+                  <td>ＯＯＯ</td>
+                  <td><span class="tag tag-green">已上線</span></td>
+                </tr>
+              </tbody> -->
+            </table>
+          </div>
+        </div>
+
+        <div class="panel" id="sec">
+          <h3><span class="num">B</span>資安漏洞通報致謝名單</h3>
+          <p class="mb-2">感謝以下同學於檢測範圍內負責任地通報漏洞，協助我們即時修補、守護校園資訊安全。</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>姓名／暱稱</th>
+                  <th>漏洞類別</th>
+                  <th>風險等級</th>
+                  <th>狀態</th>
+                  <th>致謝</th>
+                </tr>
+              </thead>
+              <!-- <tbody>
+                <tr>
+                  <td>ＯＯ（暱稱：shell）</td>
+                  <td>跨站腳本（XSS）</td>
+                  <td><span class="risk-bar severity-high">高</span></td>
+                  <td><span class="tag tag-green">已修補</span></td>
+                  <td>感謝狀</td>
+                </tr>
+                <tr>
+                  <td>ＯＯＯ</td>
+                  <td>越權存取（IDOR）</td>
+                  <td><span class="risk-bar severity-sev">嚴重</span></td>
+                  <td><span class="tag tag-green">已修補</span></td>
+                  <td>感謝狀</td>
+                </tr>
+                <tr>
+                  <td>ＯＯ（暱稱：n0va）</td>
+                  <td>開放式重新導向</td>
+                  <td><span class="risk-bar severity-mid">中</span></td>
+                  <td><span class="tag tag-green">已修補</span></td>
+                  <td>感謝狀</td>
+                </tr>
+                <tr>
+                  <td>ＯＯＯ</td>
+                  <td>資訊揭露（目錄列舉）</td>
+                  <td><span class="risk-bar severity-low">低</span></td>
+                  <td><span class="tag tag-green">已修補</span></td>
+                  <td>感謝狀</td>
+                </tr>
+              </tbody> -->
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid-3">
+        <div>
+          <div class="brand">
+            <span>臺北市數位實驗高級中等學校第五屆學生會</span>
+          </div>
+          <p class="small" style="color:#94a3b8;margin-top:8px;">數位部 學生數位專案</p>
+        </div>
+        <div>
+          <h5>計畫</h5>
+          <ul>
+            <li><a href="projects.html">數位專案鼓勵計畫</a></li>
+            <li><a href="bugbounty.html">資安漏洞回報獎勵</a></li>
+            <li><a href="thanks.html">致謝名單</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>聯絡我們</h5>
+          <ul>
+            <li>數位部聯絡人： 11430112@tschool.tp.edu.tw</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 臺北市數位實驗高級中等學校 第五屆學生會 數位部</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var open = links.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

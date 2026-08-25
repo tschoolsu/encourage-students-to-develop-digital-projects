@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>臺北市數位實驗高級中等學校 第五屆學生會 | 數位部 學生數位專案計畫</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span>
+          臺北市數位實驗高級中等學校第五屆學生會
+          <small>數位部 學生數位專案計畫</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="切換選單" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">首頁</a></li>
+        <li><a href="projects.html">數位專案</a></li>
+        <li><a href="bugbounty.html">資安漏洞回報</a></li>
+        <li><a href="thanks.html">致謝名單</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="center">
+          <p class="section-kicker">三大主軸</p>
+          <h2 class="section-title">需要你，來守護這個世界！</h2>
+          <p class="section-sub">無論是動手開發、還是守護系統安全，每一位參與者都是這個世界進步的推動者。</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon icon-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3>數位專案鼓勵計畫</h3>
+            <p>把自己的點子變成真的。提報專案構想，經數位部與正副會長審核後，可多方支援及令人羨慕的獎勵。</p>
+            <a class="card-link" href="projects.html">了解提報方式 →</a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon icon-rose">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>資安漏洞回報獎勵</h3>
+            <p>發現系統漏洞？依照規範通報，經審核確認為有效漏洞者，頒發感謝狀並列入致謝名單，共同守護這個世界。</p>
+            <a class="card-link" href="bugbounty.html">了解通報方式 →</a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon icon-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+              </svg>
+            </div>
+            <h3>致謝名單</h3>
+            <p>每一份付出都值得被記錄。完成專案的開發者、有效漏洞的通報者，都會在致謝頁面上留名，接受公開的表揚與感謝。</p>
+            <a class="card-link" href="thanks.html">前往致謝頁面 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid-3">
+        <div>
+          <div class="brand">
+            <span>臺北市數位實驗高級中等學校第五屆學生會</span>
+          </div>
+          <p class="small" style="color:#94a3b8;margin-top:8px;">數位部 學生數位專案</p>
+        </div>
+        <div>
+          <h5>計畫</h5>
+          <ul>
+            <li><a href="projects.html">數位專案鼓勵計畫</a></li>
+            <li><a href="bugbounty.html">資安漏洞回報獎勵</a></li>
+            <li><a href="thanks.html">致謝名單</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>聯絡我們</h5>
+          <ul>
+            <li>數位部聯絡人： 11430112@tschool.tp.edu.tw</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 臺北市數位實驗高級中等學校 第五屆學生會 數位部</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var open = links.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

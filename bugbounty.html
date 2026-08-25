@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>資安漏洞回報獎勵計畫</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span>
+          臺北市數位實驗高級中等學校第五屆學生會
+          <small>數位部 學生數位專案計畫</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="切換選單" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="projects.html">數位專案</a></li>
+        <li><a href="bugbounty.html" class="active">資安漏洞回報</a></li>
+        <li><a href="thanks.html">致謝名單</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">首頁</a> / 資安漏洞回報</div>
+        <h1>資安漏洞回報獎勵計畫</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="notice notice-danger">
+          <div class="notice-title">請先閱讀再進行檢測</div>
+          所有檢測必須在「檢測範圍」內、且不影響他人權益的前提下進行。超出範圍的未授權測試，將依校規及相關法律處理。
+        </div>
+
+        <div class="panel anchor" id="report-flow">
+          <h3><span class="num">1</span>通報流程</h3>
+          <ol class="steps">
+            <li>
+              <h4>閱讀範圍與規範</h4>
+              <p>先確認「檢測範圍」與「通報規範」，只針對允許的目標進行測試。</p>
+            </li>
+            <li>
+              <h4>進行檢測</h4>
+              <p>在最小影響、不讀取非必要資料的原則下，驗證漏洞是否真實存在。</p>
+            </li>
+            <li>
+              <h4>整理通報內容</h4>
+              <p>說明漏洞類型、影響範圍、影響程度、重現步驟（PoC）與建議修補方式。</p>
+            </li>
+            <li>
+              <h4>透過指定管道送出</h4>
+              <p>寄至 <strong>11430316@tschool.tp.edu.tw</strong>，主旨請註明「[數位部漏洞通報]」。</p>
+            </li>
+            <li>
+              <h4>數位部受理與回覆</h4>
+              <p>數位部於收件後 7 個工作天內回覆，確認漏洞有效性並評估風險等級。</p>
+            </li>
+            <li>
+              <h4>修補與公開致謝</h4>
+              <p>漏洞修補完成後，依揭露政策通知通報者，並於致謝名單公告表揚。</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="panel anchor" id="rules">
+          <h3><span class="num">2</span>通報規範</h3>
+          <div class="grid grid-2">
+            <div>
+              <p class="section-kicker" style="color:var(--success);">我們希望你這樣做</p>
+              <ul class="check-list">
+                <li>僅對<strong>檢測範圍內</strong>的目標進行測試。</li>
+                <li>採用<strong>最少影響</strong>的方式驗證漏洞，避免造成中斷。</li>
+                <li>僅使用通報所需的最小資料量，不擴大存取範圍。</li>
+                <li>提供<strong>清楚可重現</strong>的步驟，協助我們快速複現。</li>
+                <li>通報後耐心等待數位部處理，避免重複通報相同漏洞。</li>
+              </ul>
+            </div>
+            <div>
+              <p class="section-kicker" style="color:var(--danger);">嚴格禁止</p>
+              <ul class="cross-list">
+                <li>不得竊取、竄改、刪除或下載任何使用者資料。</li>
+                <li>不得進行阻斷服務（DoS／DDoS）等大量負載測試。</li>
+                <li>不得利用漏洞對他人造成困擾或侵害隱私。</li>
+                <li>不得在範圍外系統進行測試，亦不得攻擊第三方服務。</li>
+                <li>不得於修補完成前公開或散佈漏洞細節。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel anchor" id="rewards">
+          <h3><span class="num">3</span>獎勵說明</h3>
+          <p class="mb-2">凡經審核確認為「有效漏洞」的通報者，皆可獲得以下獎勵：</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>獎勵項目</th>
+                  <th>說明</th>
+                  <th>條件</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="tag tag-green">感謝狀</span></td>
+                  <td>頒發感謝狀，肯定你的安全貢獻。</td>
+                  <td>確認為有效漏洞</td>
+                </tr>
+                <tr>
+                  <td><span class="tag tag-amber">致謝名單</span></td>
+                  <td>姓名（或暱稱）公開列入網站致謝頁面。</td>
+                  <td>確認為有效漏洞</td>
+                </tr>
+                <tr>
+                  <td><span class="tag tag-cyan">公開表揚</span></td>
+                  <td>視嚴重程度，經本人同意後於學生會公開場合表揚。</td>
+                  <td>本人同意，且屬中高風險漏洞</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel anchor" id="scope">
+          <h3><span class="num">4</span>檢測範圍</h3>
+          <div class="grid grid-2">
+            <div>
+              <p class="section-kicker" style="color:var(--success);">範圍內（可測試）</p>
+              <ul class="check-list">
+                <li>auth.tschoolsu.org</li>
+                <li>portal.tschoolsu.org</li>
+                <li>appeals.tschoolsu.org</li>
+                <li>buddy.tschoolsu.org</li>
+                <li>csm.tschoolsu.org</li>
+                <li>form.tschoolsu.org</li>
+                <li>msg.tschoolsu.org</li>
+                <li>notes.tschoolsu.org</li>
+              </ul>
+            </div>
+            <div>
+              <p class="section-kicker" style="color:var(--danger);">範圍外（禁止測試）</p>
+              <ul class="cross-list">
+                <li>學校主站、行政系統與教職員專用系統（另有主管機關規範）。</li>
+                <li>第三方雲端服務、外部代管服務與合作廠商系統。</li>
+                <li>未經公告的伺服器、資料庫與內部網路設備。</li>
+                <li>其他學生私人建置之服務。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel anchor" id="review">
+          <h3><span class="num">5</span>審核機制</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>階段</th>
+                  <th>負責單位</th>
+                  <th>內容</th>
+                  <th>時程</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>受理</td>
+                  <td>數位部</td>
+                  <td>確認通報內容完整性、是否在範圍內</td>
+                  <td>收件後 2 個工作天內</td>
+                </tr>
+                <tr>
+                  <td>驗證</td>
+                  <td>數位部</td>
+                  <td>複現漏洞、確認真實性與實際影響</td>
+                  <td>收件後 7 個工作天內</td>
+                </tr>
+                <tr>
+                  <td>分級</td>
+                  <td>數位部</td>
+                  <td>依影響程度分為 嚴重／高／中／低 四級</td>
+                  <td>驗證完成後 3 個工作天內</td>
+                </tr>
+                <tr>
+                  <td>修補</td>
+                  <td>數位部</td>
+                  <td>由數位部資安人員緊急處理</td>
+                  <td>依風險等級排定</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-3 mb-1">漏洞風險分級參考</h4>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>等級</th>
+                  <th>定義</th>
+                  <th>處理時程</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="risk-bar severity-sev">嚴重</span></td>
+                  <td>可取得系統控制權、讀取大量機敏資料或癱瘓核心服務。</td>
+                  <td>立即處理，24 小時內啟動應變</td>
+                </tr>
+                <tr>
+                  <td><span class="risk-bar severity-high">高</span></td>
+                  <td>可越權存取或造成資料洩漏、未經授權的資料修改。</td>
+                  <td>3 個工作天內完成修補</td>
+                </tr>
+                <tr>
+                  <td><span class="risk-bar severity-mid">中</span></td>
+                  <td>資訊揭露、低程度越權或需特定條件才能利用。</td>
+                  <td>14 個工作天內完成修補</td>
+                </tr>
+                <tr>
+                  <td><span class="risk-bar severity-low">低</span></td>
+                  <td>影響有限之組態建議或資訊瑕疵。</td>
+                  <td>納入例行維護排程</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel anchor" id="disclosure">
+          <h3><span class="num">6</span>漏洞的揭露政策</h3>
+          <ul class="check-list">
+            <li><strong>修補前不公開：</strong>漏洞細節於修補完成前不對外公開，避免被他人利用。</li>
+            <li><strong>修補後揭露：</strong>修補完成後，經通報者同意，將於致謝頁面揭露漏洞類別與通報者姓名（或暱稱），不公開完整技術細節。</li>
+            <li><strong>合理時程承諾：</strong>學生會承諾於合理時間內（自確認有效日起 30 天內）完成修補或提出具體因應措施。</li>
+            <li><strong>善意免責：</strong>依本規範誠意通報之行為，學生會不對其進行追究。</li>
+            <li><strong>惡意行為究責：</strong>違反通報規範、侵害他人或超出範圍的惡意行為，將依校規及相關法律處理。</li>
+          </ul>
+        </div>
+
+        <div class="notice notice-success">
+          <div class="notice-title">立刻通報</div>
+          通報信箱：<strong>11430316@tschool.tp.edu.tw</strong>（主旨註明「[數位部漏洞通報]」）。你的每一次通報，都讓校園更安全。
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid-3">
+        <div>
+          <div class="brand">
+            <span>臺北市數位實驗高級中等學校第五屆學生會</span>
+          </div>
+          <p class="small" style="color:#94a3b8;margin-top:8px;">數位部 學生數位專案</p>
+        </div>
+        <div>
+          <h5>計畫</h5>
+          <ul>
+            <li><a href="projects.html">數位專案鼓勵計畫</a></li>
+            <li><a href="bugbounty.html">資安漏洞回報獎勵</a></li>
+            <li><a href="thanks.html">致謝名單</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>聯絡我們</h5>
+          <ul>
+            <li>數位部聯絡人： 11430112@tschool.tp.edu.tw</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 臺北市數位實驗高級中等學校 第五屆學生會 數位部</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var open = links.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

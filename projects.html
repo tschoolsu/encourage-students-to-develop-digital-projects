@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>數位專案鼓勵計畫</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span>
+          臺北市數位實驗高級中等學校第五屆學生會
+          <small>數位部 學生數位專案計畫</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="切換選單" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="projects.html" class="active">數位專案</a></li>
+        <li><a href="bugbounty.html">資安漏洞回報</a></li>
+        <li><a href="thanks.html">致謝名單</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">首頁</a> / 數位專案</div>
+        <h1>數位專案鼓勵計畫</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="panel anchor" id="flow">
+          <h3><span class="num">1</span>提報流程</h3>
+          <ol class="steps">
+            <li>
+              <h4>寄出提報信件 <span class="tag">11430112@tschool.tp.edu.tw</span></h4>
+              <p>提出專案名稱、背景動機、具體目標、技術架構、所需資源與預期成果。</p>
+            </li>
+            <li>
+              <h4>數位部初審</h4>
+              <p>數位部於收件後檢查資料完整性，並評估專案的可行性、安全性與資源需求是否符合規範。</p>
+            </li>
+            <li>
+              <h4>上報正、副會長複核</h4>
+              <p>初審通過的專案，由數位部彙整後上報正、副會長進行最終審核與資源核撥。</p>
+            </li>
+            <li>
+              <h4>核可與資源提供</h4>
+              <p>審核通過後，依申請內容提供對應支援。</p>
+            </li>
+            <li>
+              <h4>開發、追蹤與結案</h4>
+              <p>開發期間由數位部定期追蹤進度；完成階段性成果後辦理結案，正式上線並列入致謝名單。</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="panel anchor" id="rules">
+          <h3><span class="num">2</span>提報規範</h3>
+          <div class="grid grid-2">
+            <div>
+              <p class="section-kicker" style="color:var(--success);">可提報</p>
+              <ul class="check-list">
+                <li><strong>提報對象：</strong>臺北市數位實驗高級中等學校全體學生。</li>
+                <li><strong>專案用途：</strong>與校園數位環境、學生會服務或校內公共事務相關。</li>
+                <li><strong>原創性：</strong>須為原創或清楚標示授權來源，不侵害他人著作權。</li>
+                <li><strong>可行性：</strong>能在明確時程內完成階段性成果，並提出可量化的目標。</li>
+                <li><strong>協作：</strong>可個人或組隊（請指定一位主要聯絡人）。</li>
+              </ul>
+            </div>
+            <div>
+              <p class="section-kicker" style="color:var(--danger);">注意事項</p>
+              <ul class="cross-list">
+                <li>不得以學生會名義進行未經核可的對外營運或募資。</li>
+                <li>不得儲存或蒐集超出需要的個人資料。</li>
+                <li>涉及金錢、採購或重大資源的專案，須自行負責，數位部不承擔相關責任。</li>
+                <li>與既有校內服務重疊時，將優先協調整併而非重複開發。</li>
+                <li>未依時程回報進度者，數位部得暫緩其資源支援。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel anchor" id="rewards">
+          <h3><span class="num">3</span>獎勵說明</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>獎勵項目</th>
+                  <th>說明</th>
+                  <th>適用對象</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>子網域申請</td>
+                  <td>審核通過的專案，可申請專屬子網域作為線上服務入口（*.tschoolsu.org 網域體系下）。</td>
+                  <td>審核通過之專案<br>校內社團之數位專案</td>
+                </tr>
+                <tr>
+                  <td>整併進學生會系統</td>
+                  <td>評估適合的專案可整合進學生會系統，成為校園共用服務，獲得固定維運與曝光。</td>
+                  <td>審核通過之專案</td>
+                </tr>
+                <tr>
+                  <td>感謝狀</td>
+                  <td>完成結案且成果上線的專案團隊，頒發感謝狀。</td>
+                  <td>結案團隊</td>
+                </tr>
+                <tr>
+                  <td>致謝名單</td>
+                  <td>團隊成員姓名公開列入網站致謝頁面。</td>
+                  <td>結案團隊</td>
+                </tr>
+                <tr>
+                  <td>資格推薦</td>
+                  <td>優秀學生可獲得推薦資格。</td>
+                  <td>評選優秀專案</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel anchor" id="review">
+          <h3><span class="num">4</span>整併審核機制</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>階段</th>
+                  <th>負責單位</th>
+                  <th>審核重點</th>
+                  <th>時程</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>初審</td>
+                  <td>數位部</td>
+                  <td>資料完整性、可行性、安全性、資源需求合理性</td>
+                  <td>收件後 7 個工作天內</td>
+                </tr>
+                <tr>
+                  <td>複核</td>
+                  <td>正、副會長</td>
+                  <td>專案方向、對校園的效益、核撥資源之最終確認</td>
+                  <td>初審通過後 7 個工作天內</td>
+                </tr>
+                <tr>
+                  <td>資安審查</td>
+                  <td>數位部（必要時）</td>
+                  <td>涉及伺服器、系統整併或個資之專案，須通過安全檢核</td>
+                  <td>上線前完成</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid-3">
+        <div>
+          <div class="brand">
+            <span>臺北市數位實驗高級中等學校第五屆學生會</span>
+          </div>
+          <p class="small" style="color:#94a3b8;margin-top:8px;">數位部 學生數位專案</p>
+        </div>
+        <div>
+          <h5>計畫</h5>
+          <ul>
+            <li><a href="projects.html">數位專案鼓勵計畫</a></li>
+            <li><a href="bugbounty.html">資安漏洞回報獎勵</a></li>
+            <li><a href="thanks.html">致謝名單</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>聯絡我們</h5>
+          <ul>
+            <li>數位部聯絡人： 11430112@tschool.tp.edu.tw</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 臺北市數位實驗高級中等學校 第五屆學生會 數位部</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var open = links.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
